@@ -8,8 +8,8 @@ parameters.controls=1;                                      %number of actuation
 parameters.problem_variables.gamma  = 0.2;                  % Relative weight of cost function
 parameters.problem_variables.eval_steps = 4000;             % number of evaluation steps (first for first evaluation, rest for reevaluations
 parameters.problem_variables.subeval_steps = 666;
-% parameters.evaluation_method='mfile_multi';
-parameters.evaluation_method='mfile_multi_parallel';
+parameters.evaluation_method='mfile_multi';
+% parameters.evaluation_method='mfile_multi_parallel';
 
 %% Main
 %number of individuals  

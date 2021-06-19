@@ -1,0 +1,1 @@
+python3 perform_learning.py "0" "-0" 1000 0+1i > NUL

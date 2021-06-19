@@ -89,27 +89,15 @@ function [J,sys]=Cylinder_problem(ind,gen_param,i,fig)
         system(['./input' num2str(i) '.sh']);
         
         
-        if strncmp(lastwarn,'Failure',7)
-            warning('reset')
-            sys.crashed=1;
-        else
-            sys.crashed=0;
-        end
-        
-        if verb
-            fprintf('(%i) Simulation finished.\n',i);
-        end
+        fprintf('(%i) Simulation finished.\n',i);
     catch err    
         sys=[];
         sys.crashed=1;
-        if verb
-            fprintf('(%i) Simulation crashed.\n',i)
-        end
     end
     crashed=sys.crashed;
     if crashed==1
         J=gen_param.badvalue;
-        if verb>1;fprintf('(%i) Bad fitness: sim crashed\n',i);end     
+        fprintf('(%i) Bad fitness: sim crashed\n',i);     
     else
         try
             %retrieve resulting data from csv file
@@ -121,14 +109,12 @@ function [J,sys]=Cylinder_problem(ind,gen_param,i,fig)
             
             %compute J, based on Rabault reward function (3.18 = 0.159*20)
             J=1+(C_D-3.18)+gamma_J*abs(C_L);  %3.18 is a proxy value, corresponding to CD when there is no control
-            if verb==4
-                fprintf(['C_D = ' num2str(C_D) '\n'])
-                fprintf(['C_L = ' num2str(C_L) '\n'])
-                fprintf(['J = ' num2str(J) '\n'])
-            end
+            
+            fprintf('(%i) C_D = %f\n',i,C_D)
+            fprintf('(%i) C_L = %f\n',i,C_L)
+            fprintf('(%i) J   = %f\n',i,J)
             %Print python input
-            fprintf(['jet 1 = ' jet1 '\n']);
-            fprintf(['jet 2 = ' jet2 '\n']);
+            fprintf(['(%i) jet = ' jet1 '\n'],i);
         catch err    
             sys=[];
             sys.crashed=1;
