@@ -67,7 +67,7 @@ function parameters = cylinder_parameters()
     
     % Simulation
         ProblemParameters.gamma  = 0.2;                  % Relative weight of cost function
-        ProblemParameters.eval_steps = 700;             % number of evaluation steps (first for first evaluation, rest for reevaluations
+        ProblemParameters.eval_steps = 4000;             % number of evaluation steps (first for first evaluation, rest for reevaluations
         ProblemParameters.subeval_steps = 666;
         
     % Definition
@@ -134,7 +134,7 @@ function parameters = cylinder_parameters()
     
     %% MLC parameters
     % Population size
-    parameters.PopulationSize = 10;
+    parameters.PopulationSize = 150;
     % Optimization parameters
     parameters.OptiMonteCarlo = 1; % Optimization of the first generation (remove duplicates, redundants..)
     parameters.RemoveBadIndividuals = 1; % Remove indiviuals which evaluation failed
