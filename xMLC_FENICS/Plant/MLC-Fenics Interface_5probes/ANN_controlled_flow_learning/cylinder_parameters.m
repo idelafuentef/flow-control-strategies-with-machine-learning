@@ -11,6 +11,9 @@ function parameters = cylinder_parameters()
     %% Options
 	parameters.verbose = 2; 
     
+    %% Parallel computing
+    parameters.parallel=1;
+    parameters.numworkers=60;
     
     %% Problem parameters
     % Problem
@@ -64,7 +67,7 @@ function parameters = cylinder_parameters()
     
     % Simulation
         ProblemParameters.gamma  = 0.2;                  % Relative weight of cost function
-        ProblemParameters.eval_steps = 1000;             % number of evaluation steps (first for first evaluation, rest for reevaluations
+        ProblemParameters.eval_steps = 700;             % number of evaluation steps (first for first evaluation, rest for reevaluations
         ProblemParameters.subeval_steps = 666;
         
     % Definition
@@ -118,7 +121,7 @@ function parameters = cylinder_parameters()
                 end %*
             ControlLaw.Registers = r; %*
         % Control law estimation
-        ControlLaw.ControlPointNumber = 120; %1000?
+        ControlLaw.ControlPointNumber = 1000; %1000?
         ControlLaw.SensorRange = [repmat([-2 2],ProblemParameters.NumberSensors,1)]; % Range for sensors
             Nbpts = ControlLaw.ControlPointNumber; %*
             Rmin = min(ControlLaw.SensorRange,[],2); %*
@@ -131,7 +134,7 @@ function parameters = cylinder_parameters()
     
     %% MLC parameters
     % Population size
-    parameters.PopulationSize = 120;
+    parameters.PopulationSize = 10;
     % Optimization parameters
     parameters.OptiMonteCarlo = 1; % Optimization of the first generation (remove duplicates, redundants..)
     parameters.RemoveBadIndividuals = 1; % Remove indiviuals which evaluation failed

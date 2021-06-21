@@ -682,8 +682,6 @@ class Env2DCylinder():
         for crrt_probe in range(len(self.output_params["locations"])):
             Probe_u.append(self.probes_values[2 * crrt_probe])
             Probe_v.append(self.probes_values[2 * crrt_probe + 1])
-        print(Probe_u)
-        print(Probe_v)
         
         #actions are defined as the evaluation of the (string) function assigned to the jets
         #these functions are assigned previously in "perform_learning.py" from the info provided from MLC (each individual provides a string, which is transformed into two jet actuations)

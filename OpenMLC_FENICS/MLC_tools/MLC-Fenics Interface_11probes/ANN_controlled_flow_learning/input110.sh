@@ -1,0 +1,1 @@
+python3 perform_learning.py "np.sin((np.sin(np.sin(Probe_v[4]))*(np.sin(np.tanh(Probe_v[2]))+(-0.02972))))" "-np.sin((np.sin(np.sin(Probe_v[4]))*(np.sin(np.tanh(Probe_v[2]))+(-0.02972))))" 4000 110 > NUL

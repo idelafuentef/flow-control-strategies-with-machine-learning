@@ -59,9 +59,9 @@ function J_out=cylinder_problem(Arrayb,parameters,visu,ind)
     fprintf('(%i) Simulating ...\n',ind)
     
     try
-        
-        if contains(jet1,'s')==0
-            error('aaa')
+        if contains(jet1,'Probe')==0
+            fprintf('(%i) No sensor found! \n',ind)
+            error('no sensor')
         end
         %Substitute functions by their python name
         jet1=strrep(jet1,'sin','np.sin');  

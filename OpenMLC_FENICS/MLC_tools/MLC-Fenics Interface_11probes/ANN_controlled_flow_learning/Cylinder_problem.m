@@ -17,29 +17,29 @@ function [J,sys]=Cylinder_problem(ind,gen_param,i,fig)
     %substitute each sensor by the corresponding variable
     m=substitute(m,gen_param.sensors);
     
-%     m=strrep(m,'S21','Probe_v[10]');
-%     m=strrep(m,'S20','Probe_v[9]');
-%     m=strrep(m,'S19','Probe_v[8]');
-%     m=strrep(m,'S18','Probe_v[7]');
-%     m=strrep(m,'S17','Probe_v[6]');
-%     m=strrep(m,'S16','Probe_v[5]');
-%     m=strrep(m,'S15','Probe_v[4]');
-%     m=strrep(m,'S14','Probe_v[3]');
-%     m=strrep(m,'S13','Probe_v[2]');
-%     m=strrep(m,'S12','Probe_v[1]');
-%     m=strrep(m,'S11','Probe_v[0]');
-%     
-%     m=strrep(m,'S10','Probe_u[10]');
-%     m=strrep(m,'S9','Probe_u[9]');
-%     m=strrep(m,'S8','Probe_u[8]');
-%     m=strrep(m,'S7','Probe_u[7]');
-%     m=strrep(m,'S6','Probe_u[6]');
-%     m=strrep(m,'S5','Probe_u[5]');
-%     m=strrep(m,'S4','Probe_u[4]');
-%     m=strrep(m,'S3','Probe_u[3]');
-%     m=strrep(m,'S2','Probe_u[2]');
-%     m=strrep(m,'S1','Probe_u[1]');
-%     m=strrep(m,'S0','Probe_u[0]');
+    m=strrep(m,'S21','Probe_v[10]');
+    m=strrep(m,'S20','Probe_v[9]');
+    m=strrep(m,'S19','Probe_v[8]');
+    m=strrep(m,'S18','Probe_v[7]');
+    m=strrep(m,'S17','Probe_v[6]');
+    m=strrep(m,'S16','Probe_v[5]');
+    m=strrep(m,'S15','Probe_v[4]');
+    m=strrep(m,'S14','Probe_v[3]');
+    m=strrep(m,'S13','Probe_v[2]');
+    m=strrep(m,'S12','Probe_v[1]');
+    m=strrep(m,'S11','Probe_v[0]');
+    
+    m=strrep(m,'S10','Probe_u[10]');
+    m=strrep(m,'S9','Probe_u[9]');
+    m=strrep(m,'S8','Probe_u[8]');
+    m=strrep(m,'S7','Probe_u[7]');
+    m=strrep(m,'S6','Probe_u[6]');
+    m=strrep(m,'S5','Probe_u[5]');
+    m=strrep(m,'S4','Probe_u[4]');
+    m=strrep(m,'S3','Probe_u[3]');
+    m=strrep(m,'S2','Probe_u[2]');
+    m=strrep(m,'S1','Probe_u[1]');
+    m=strrep(m,'S0','Probe_u[0]');
     
     m=strrep(m,' ','');
     m=strrep(m,'.*','*');
@@ -56,18 +56,18 @@ function [J,sys]=Cylinder_problem(ind,gen_param,i,fig)
     try
         m_matlab=m;
         m_matlab=mat_substitute(m_matlab,gen_param.sensors);
-%         m_matlab=strrep(m,'Probe_u[0]','Probe_u(1)');
-%         m_matlab=strrep(m_matlab,'Probe_u[1]','Probe_u(2)');
-%         m_matlab=strrep(m_matlab,'Probe_u[2]','Probe_u(3)');
-%         m_matlab=strrep(m_matlab,'Probe_u[3]','Probe_u(4)');
-%         m_matlab=strrep(m_matlab,'Probe_u[4]','Probe_u(5)');        
-%         
-%         m_matlab=strrep(m_matlab,'Probe_v[0]','Probe_v(1)');
-%         m_matlab=strrep(m_matlab,'Probe_v[1]','Probe_v(2)');
-%         m_matlab=strrep(m_matlab,'Probe_v[2]','Probe_v(3)');
-%         m_matlab=strrep(m_matlab,'Probe_v[3]','Probe_v(4)');
-%         m_matlab=strrep(m_matlab,'Probe_v[4]','Probe_v(5)');
-%         
+        m_matlab=strrep(m,'Probe_u[0]','Probe_u(1)');
+        m_matlab=strrep(m_matlab,'Probe_u[1]','Probe_u(2)');
+        m_matlab=strrep(m_matlab,'Probe_u[2]','Probe_u(3)');
+        m_matlab=strrep(m_matlab,'Probe_u[3]','Probe_u(4)');
+        m_matlab=strrep(m_matlab,'Probe_u[4]','Probe_u(5)');        
+        
+        m_matlab=strrep(m_matlab,'Probe_v[0]','Probe_v(1)');
+        m_matlab=strrep(m_matlab,'Probe_v[1]','Probe_v(2)');
+        m_matlab=strrep(m_matlab,'Probe_v[2]','Probe_v(3)');
+        m_matlab=strrep(m_matlab,'Probe_v[3]','Probe_v(4)');
+        m_matlab=strrep(m_matlab,'Probe_v[4]','Probe_v(5)');
+         
         jet1_mat=m_matlab;
         jet2_mat=['-' m_matlab];
         
@@ -76,8 +76,6 @@ function [J,sys]=Cylinder_problem(ind,gen_param,i,fig)
         Probe_u=ones(gen_param.sensors/2,1)*10;
         Probe_v=ones(gen_param.sensors/2,1)*10;
         
-        disp(jet1)
-        disp(jet2)
         if abs(eval(jet1_mat)*0.01)>0.01 || abs(eval(jet2_mat)*0.01)>0.01
             disp('Over the limits')
             error('aa')
@@ -129,8 +127,7 @@ function [J,sys]=Cylinder_problem(ind,gen_param,i,fig)
     else
         try
             %retrieve resulting data from csv file
-            output=table2cell(readtable(['saved_models/test_strategy' num2str(i) '.csv']));
-            
+            output=table2cell(readtable(['saved_models/test_strategy' num2str(i) '.csv']));        
             
             %% CASE 1: VALOR ABSOLUTO DE LA MEDIA CL (SAME AS RABAULT)
 %             %compute C_D and C_L based on final region and factorize

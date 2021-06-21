@@ -57,4 +57,4 @@ fprintf('\n')
 
 %% Initialization
 mlc=MLC('cylinder');
-mlc.go(20);
+mlc.go(2);

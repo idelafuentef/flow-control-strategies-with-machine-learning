@@ -13,33 +13,28 @@ function pop = evaluate_pop(pop,idx_to_evaluate,MLC_parameters,MLC_table)
 
 indiv_to_evaluate = pop.individuals(idx_to_evaluate);
 
-  fprintf('Evaluation of generation %i :\n',pop.generation);
+fprintf('Evaluation of generation %i :\n',pop.generation);
+
 %% Evaluation loop
-%parallelized
-delete saved_models/test_strategy*
-delete(gcp('nocreate'));
-parpool(60);
-parfor p=1:numel(idx_to_evaluate)
-    if MLC_parameters.verbose
+if MLC_parameters.parallel==1
+    delete saved_models/test_strategy*
+    delete(gcp('nocreate'));    
+    parpool(MLC_parameters.numworkers);
+    parfor p=1:numel(idx_to_evaluate)
         fprintf('    Evaluation of individual %i/%i',idx_to_evaluate(p),MLC_parameters.PopulationSize)
+        auxind(p) = evaluate_indiv(MLC_table.individuals(indiv_to_evaluate(p)),MLC_parameters,p);
+    end    
+else
+    delete saved_models/test_strategy*
+    for p=1:numel(idx_to_evaluate)
+        fprintf('    Evaluation of individual %i/%i',idx_to_evaluate(p),MLC_parameters.PopulationSize)
+        auxind(p) = evaluate_indiv(MLC_table.individuals(indiv_to_evaluate(p)),MLC_parameters,p);
     end
-    visu=0;
-    MLC_table.individuals(indiv_to_evaluate(p)).evaluate_indiv(MLC_parameters,p);
 end
-
-%not parallelized
-% delete saved_models/test_strategy*
-% for p=1:numel(idx_to_evaluate)
-%     if MLC_parameters.verbose
-%         fprintf('    Evaluation of individual %i/%i',idx_to_evaluate(p),MLC_parameters.PopulationSize)
-%     end
-%     visu=0;
-%     MLC_table.individuals(indiv_to_evaluate(p)).evaluate_indiv(MLC_parameters,p);
-% end
-
 
 %% Complete population
 for p=1:numel(idx_to_evaluate)
+    MLC_table.individuals(indiv_to_evaluate(p))=auxind(p);
     % population.cost update
     all_J = cell2mat(MLC_table.individuals(indiv_to_evaluate(p)).cost(:,1));
     

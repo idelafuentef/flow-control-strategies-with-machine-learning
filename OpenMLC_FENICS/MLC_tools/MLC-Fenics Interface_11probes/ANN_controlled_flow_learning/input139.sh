@@ -1,0 +1,1 @@
+python3 perform_learning.py "np.sin(np.sin(Probe_u[2]))" "-np.sin(np.sin(Probe_u[2]))" 4000 139 > NUL
