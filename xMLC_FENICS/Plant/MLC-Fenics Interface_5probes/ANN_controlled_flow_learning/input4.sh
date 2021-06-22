@@ -1,1 +1,0 @@
-python3 perform_learning.py "np.sin((np.tanh(Probe_u[3])*0.73978))" "-np.sin((np.tanh(Probe_u[3])*0.73978))" 700 4 > NUL

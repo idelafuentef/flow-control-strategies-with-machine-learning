@@ -1,1 +1,0 @@
-python3 perform_learning.py "0.1321" "-0.1321" 4000 53 > NUL

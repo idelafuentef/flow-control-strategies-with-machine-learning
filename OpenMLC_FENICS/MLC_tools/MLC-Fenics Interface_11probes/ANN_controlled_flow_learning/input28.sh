@@ -1,1 +1,0 @@
-python3 perform_learning.py "np.cos(np.sin(np.sin(Probe_v[1])))" "-np.cos(np.sin(np.sin(Probe_v[1])))" 4000 28 > NUL

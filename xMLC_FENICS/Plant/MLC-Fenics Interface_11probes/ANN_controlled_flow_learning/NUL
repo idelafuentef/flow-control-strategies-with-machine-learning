@@ -1,0 +1,44 @@
+iUFL can be obtained from https://github.com/MiroK/ufl-interpreter
+--- call init ---
+Load initial flow
+Load buffer history
+--- done init ---
+Load initial flow
+Load buffer history
+Simulation_lift | Ep N:    0, step:    0, Rec Area: 0.0117, drag: -0.1586, lift: 0.0167
+Simulation_lift | Ep N:    0, step:   10, Rec Area: 0.0117, drag: -0.1586, lift: 0.0204
+Simulation_lift | Ep N:    0, step:   20, Rec Area: 0.0118, drag: -0.1587, lift: 0.0247
+Simulation_lift | Ep N:    0, step:   30, Rec Area: 0.0117, drag: -0.1588, lift: 0.0288
+Simulation_lift | Ep N:    0, step:   40, Rec Area: 0.0113, drag: -0.1590, lift: 0.0326
+Simulation_lift | Ep N:    0, step:   50, Rec Area: 0.0112, drag: -0.1592, lift: 0.0360
+Simulation_lift | Ep N:    0, step:   60, Rec Area: 0.0112, drag: -0.1595, lift: 0.0392
+Simulation_lift | Ep N:    0, step:   70, Rec Area: 0.0114, drag: -0.1598, lift: 0.0421
+Simulation_lift | Ep N:    0, step:   80, Rec Area: 0.0119, drag: -0.1601, lift: 0.0446
+Simulation_lift | Ep N:    0, step:   90, Rec Area: 0.0118, drag: -0.1605, lift: 0.0467
+Simulation_lift | Ep N:    0, step:  100, Rec Area: 0.0115, drag: -0.1608, lift: 0.0485
+Simulation_lift | Ep N:    0, step:  110, Rec Area: 0.0115, drag: -0.1612, lift: 0.0498
+Simulation_lift | Ep N:    0, step:  120, Rec Area: 0.0112, drag: -0.1615, lift: 0.0507
+Simulation_lift | Ep N:    0, step:  130, Rec Area: 0.0111, drag: -0.1618, lift: 0.0511
+Simulation_lift | Ep N:    0, step:  140, Rec Area: 0.0111, drag: -0.1620, lift: 0.0511
+Simulation_lift | Ep N:    0, step:  150, Rec Area: 0.0111, drag: -0.1622, lift: 0.0505
+Simulation_lift | Ep N:    0, step:  160, Rec Area: 0.0109, drag: -0.1623, lift: 0.0494
+Simulation_lift | Ep N:    0, step:  170, Rec Area: 0.0110, drag: -0.1624, lift: 0.0479
+Simulation_lift | Ep N:    0, step:  180, Rec Area: 0.0104, drag: -0.1624, lift: 0.0458
+Simulation_lift | Ep N:    0, step:  190, Rec Area: 0.0109, drag: -0.1624, lift: 0.0433
+Simulation_lift | Ep N:    0, step:  200, Rec Area: 0.0110, drag: -0.1622, lift: 0.0404
+Simulation_lift | Ep N:    0, step:  210, Rec Area: 0.0111, drag: -0.1621, lift: 0.0371
+Simulation_lift | Ep N:    0, step:  220, Rec Area: 0.0106, drag: -0.1618, lift: 0.0334
+Simulation_lift | Ep N:    0, step:  230, Rec Area: 0.0105, drag: -0.1615, lift: 0.0294
+Simulation_lift | Ep N:    0, step:  240, Rec Area: 0.0105, drag: -0.1612, lift: 0.0250
+Simulation_lift | Ep N:    0, step:  250, Rec Area: 0.0105, drag: -0.1609, lift: 0.0204
+Simulation_lift | Ep N:    0, step:  260, Rec Area: 0.0107, drag: -0.1605, lift: 0.0155
+Simulation_lift | Ep N:    0, step:  270, Rec Area: 0.0109, drag: -0.1602, lift: 0.0105
+Simulation_lift | Ep N:    0, step:  280, Rec Area: 0.0109, drag: -0.1599, lift: 0.0054
+Simulation_lift | Ep N:    0, step:  290, Rec Area: 0.0109, drag: -0.1596, lift: 0.0003
+Simulation_lift | Ep N:    0, step:  300, Rec Area: 0.0111, drag: -0.1593, lift: -0.0048
+Simulation_lift | Ep N:    0, step:  310, Rec Area: 0.0110, drag: -0.1591, lift: -0.0097
+Simulation_lift | Ep N:    0, step:  320, Rec Area: 0.0107, drag: -0.1590, lift: -0.0145
+Simulation_lift | Ep N:    0, step:  330, Rec Area: 0.0109, drag: -0.1589, lift: -0.0191
+Simulation_lift | Ep N:    0, step:  340, Rec Area: 0.0111, drag: -0.1589, lift: -0.0235
+Simulation_lift | Ep N:    0, step:  350, Rec Area: 0.0114, drag: -0.1590, lift: -0.0277
+Simulation_lift | Ep N:    0, step:  360, Rec Area: 0.0114, drag: -0.1591, lift: -0.0315
