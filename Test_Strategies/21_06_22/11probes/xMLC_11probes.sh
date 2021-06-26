@@ -1,0 +1,1 @@
+python3 perform_learning.py "(np.sin(((Probe_u[4]+np.cos(Probe_u[10]))+(-0.27109)))*((((Probe_u[4]+np.cos(Probe_u[10]))+Probe_u[6])*(np.cos(Probe_u[10])*(-0.67915)))+Probe_v[6]))" "-(np.sin(((Probe_u[4]+np.cos(Probe_u[10]))+(-0.27109)))*((((Probe_u[4]+np.cos(Probe_u[10]))+Probe_u[6])*(np.cos(Probe_u[10])*(-0.67915)))+Probe_v[6]))" 12000 96

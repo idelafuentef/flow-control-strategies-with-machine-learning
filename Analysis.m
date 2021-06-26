@@ -19,7 +19,7 @@ x3=iter3*0.0005*10;
 num_plots = 2;
 numeval=6660;
 %% DATA
-data1=readtable('Test_Strategies/21_06_22/5probes/OpenMLC_5probes.csv');
+data1=readtable('Test_Strategies/21_06_22/11probes/OpenMLC_11probes.csv');
 y1=data1{1:12000,6};
 CD1=data1{1:12000,3};
 CL1=data1{1:12000,4};
@@ -30,7 +30,7 @@ fprintf('Mean Cl (last sheddind cycle)  : %.3f \n',mean(CL1(end-numeval:end))*fa
 fprintf('Cd reduction (percent)         : %.3f \n',-100*(mean(CD1(end-numeval:end))*factor-3.206428)/(mean(CD1(end-numeval:end))*factor))
 fprintf('\n')
 
-data2   = readtable('Test_Strategies/21_06_22/5probes/Rabault_5probes.csv');
+data2   = readtable('Test_Strategies/21_06_22/11probes/xMLC_11probes.csv');
 y2      = data2{1:end,6};
 CD2     = data2{1:end,3};
 CL2     = data2{1:end,4};
@@ -41,7 +41,7 @@ fprintf('Mean Cl (last sheddind cycle)  : %.3f \n',mean(CL2(end-numeval:end))*fa
 fprintf('Cd reduction (percent)         : %.3f \n',-100*(mean(CD2(end-numeval:end))*factor-3.206428)/(mean(CD2(end-numeval:end))*factor))
 fprintf('\n')
 
-data3   = readtable('Test_Strategies/21_06_22/11probes/OpenMLC_11probes_RedAmpl.csv');
+data3   = readtable('Test_Strategies/21_06_22/11probes/Rabault_11probes_840.csv');
 y3      = data3{1:end,6};
 CD3     = data3{1:end,3};
 CL3     = data3{1:end,4};
@@ -128,35 +128,35 @@ figure(1)
 plot(x,y3);
 figure(2)
 plot(x,CD3*factor);
-legend('Rabault','OpenMLC','OpenMLC-Reduced Amplitude')
+legend('OpenMLC','xMLC','Rabault')
 figure(3)
 plot(x,CL3*factor);
 figure(4)
 plot(x,Rec_A3);
 
 % 4th set of data
-figure(1)
-figure(1)
-plot(x,y4);
-figure(2)
-plot(x,CD4*factor);
-figure(3)
-plot(x,CL4*factor);
-figure(4)
-plot(x,Rec_A4);
-
-% 5th set of data
-figure(1)
-figure(1)
-plot(x,y5);
-legend('MLC 5','Rabault 5','MLC 11','Rabault 11','Rabault 151')
-figure(2)
-plot(x,CD5*factor);
-legend('MLC 5','Rabault 5','MLC 11','Rabault 11','Rabault 151')
-figure(3)
-plot(x,CL5*factor);
-figure(4)
-plot(x,Rec_A5);
+% figure(1)
+% figure(1)
+% plot(x,y4);
+% figure(2)
+% plot(x,CD4*factor);
+% figure(3)
+% plot(x,CL4*factor);
+% figure(4)
+% plot(x,Rec_A4);
+% 
+% % 5th set of data
+% figure(1)
+% figure(1)
+% plot(x,y5);
+% legend('MLC 5','Rabault 5','MLC 11','Rabault 11','Rabault 151')
+% figure(2)
+% plot(x,CD5*factor);
+% legend('MLC 5','Rabault 5','MLC 11','Rabault 11','Rabault 151')
+% figure(3)
+% plot(x,CL5*factor);
+% figure(4)
+% plot(x,Rec_A5);
 
 %% JFM paper plots
 % CL_case=CL1;
