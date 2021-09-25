@@ -1,0 +1,1 @@
+python3 ./perform_learning.py "0.01*(np.sin(((np.exp(np.exp(2.454))*np.sin(Probe_v_1_2[2]))*np.exp(np.exp(2.454)))))" "-0.01*(np.sin(((np.exp(np.exp(2.454))*np.sin(Probe_v_1_2[2]))*np.exp(np.exp(2.454)))))" 12000 5

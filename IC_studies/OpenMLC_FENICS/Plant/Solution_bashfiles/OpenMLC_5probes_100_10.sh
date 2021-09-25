@@ -1,0 +1,1 @@
+python3 ./perform_learning.py "0.01*((np.cos((Probe_u_3_4[2]-3.388))-np.tanh(np.tanh(Probe_v_1_2[4]))))" "-0.01*((np.cos((Probe_u_3_4[2]-3.388))-np.tanh(np.tanh(Probe_v_1_2[4]))))" 12000 10

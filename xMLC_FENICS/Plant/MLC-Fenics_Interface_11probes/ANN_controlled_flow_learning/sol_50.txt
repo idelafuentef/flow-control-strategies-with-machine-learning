@@ -1,0 +1,20 @@
+To create the next generation : mlc.evolve_population;
+15 generation(s) calculated in 9181.3353 seconds
+ Cost of the best individual = 0.97316
+ Its expression = 
+    b = tanh(s(64))
+
+To create the next generation : mlc.evolve_population;
+10 generation(s) calculated in 5493.3081 seconds
+ Cost of the best individual = 0.93704
+ Its expression = 
+    b = (s(17) - s(28))
+
+
+To create the next generation : mlc.evolve_population;
+5 generation(s) calculated in 4750.0707 seconds
+ Cost of the best individual = 0.99262
+ Its expression = 
+    b = (s(58) .* sin((s(88) - s(87))))
+IdleTimeout has been reached.
+Parallel pool using the 'local' profile is shutting down.

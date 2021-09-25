@@ -1,0 +1,1 @@
+python3 ./perform_learning.py "0.01*((Probe_u_1_2[5]-Probe_u_1_4[5]))" "-0.01*((Probe_u_1_2[5]-Probe_u_1_4[5]))" 12000 10

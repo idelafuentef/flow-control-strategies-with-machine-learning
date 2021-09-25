@@ -1,0 +1,1 @@
+python3 ./perform_learning.py "0.01*((((Cl-Cd_500)+(Cl-Cd_500))+((Cd_500+Cl)+Cl_500)))" "-0.01*((((Cl-Cd_500)+(Cl-Cd_500))+((Cd_500+Cl)+Cl_500)))" 12000 10

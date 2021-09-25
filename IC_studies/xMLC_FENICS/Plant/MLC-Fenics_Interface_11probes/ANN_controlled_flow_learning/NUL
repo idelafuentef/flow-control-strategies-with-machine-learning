@@ -1,0 +1,9 @@
+iUFL can be obtained from https://github.com/MiroK/ufl-interpreter
+--- call init ---
+Load initial flow
+Load buffer history
+--- done init ---
+Load initial flow
+Load buffer history
+641
+Single Run finished. AvgDrag : -0.14984915148735523, AvgLift : 0.010519608246181915

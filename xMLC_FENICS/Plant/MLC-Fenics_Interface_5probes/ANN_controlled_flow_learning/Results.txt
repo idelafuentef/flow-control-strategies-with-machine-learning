@@ -1,0 +1,4 @@
+15 generation(s) calculated in 14178.4462 seconds
+ Cost of the best individual = 1.0249
+ Its expression = 
+    b = ((-0.594379) - (0.18958 + (s(13) .* s(28))))

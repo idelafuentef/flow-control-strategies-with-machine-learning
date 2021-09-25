@@ -1,0 +1,1 @@
+python3 perform_learning.py "0.01*(np.sin((Probe_v[4]+Probe_u_1_2[0])))" "-0.01*(np.sin((Probe_v[4]+Probe_u_1_2[0])))" 4000 170 > NUL
