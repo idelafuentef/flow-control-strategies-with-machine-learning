@@ -1,1 +1,0 @@
-python3 perform_learning.py "(((-0.62615)+Probe_v[10])-(np.tanh(((-0.1006)-Probe_v[2]))-Probe_v[6]))" "-(((-0.62615)+Probe_v[10])-(np.tanh(((-0.1006)-Probe_v[2]))-Probe_v[6]))" 4000 168 > NUL

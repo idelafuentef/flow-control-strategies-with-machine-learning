@@ -1,1 +1,0 @@
-python3 perform_learning.py "((((((Probe_v[2]+Probe_v[6])+Probe_v[6])+Probe_v[6])-Probe_u[5])+np.cos(Probe_v[10]))-(np.sin(Probe_v[6])+np.cos(Probe_v[10])))" "-((((((Probe_v[2]+Probe_v[6])+Probe_v[6])+Probe_v[6])-Probe_u[5])+np.cos(Probe_v[10]))-(np.sin(Probe_v[6])+np.cos(Probe_v[10])))" 4000 470 > NUL

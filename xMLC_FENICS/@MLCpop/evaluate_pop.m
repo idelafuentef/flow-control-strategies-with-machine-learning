@@ -18,8 +18,6 @@ fprintf('Evaluation of generation %i :\n',pop.generation);
 %% Evaluation loop
 if MLC_parameters.parallel==1
     delete saved_models/test_strategy*
-    delete(gcp('nocreate'));    
-    parpool(MLC_parameters.numworkers);
     parfor p=1:numel(idx_to_evaluate)
         fprintf('    Evaluation of individual %i/%i',idx_to_evaluate(p),MLC_parameters.PopulationSize)
         auxind(p) = evaluate_indiv(MLC_table.individuals(indiv_to_evaluate(p)),MLC_parameters,p);

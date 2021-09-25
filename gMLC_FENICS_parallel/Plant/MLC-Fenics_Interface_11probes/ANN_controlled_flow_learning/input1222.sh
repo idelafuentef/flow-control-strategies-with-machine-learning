@@ -1,1 +1,0 @@
-python3 perform_learning.py "(Probe_v[9]+0.994927)" "-(Probe_v[9]+0.994927)" 4000 1222 > NUL

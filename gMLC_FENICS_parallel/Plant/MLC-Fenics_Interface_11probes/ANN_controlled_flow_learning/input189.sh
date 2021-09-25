@@ -1,1 +1,0 @@
-python3 perform_learning.py "0.125*Probe_v[2]+(0.375*(((Probe_v[7]+(Probe_v[10]-(-0.50581)))+Probe_v[6])*Probe_v[1]))+(0.5*((Probe_u[9]+Probe_v[6])*Probe_v[1]))" "-0.125*Probe_v[2]+(0.375*(((Probe_v[7]+(Probe_v[10]-(-0.50581)))+Probe_v[6])*Probe_v[1]))+(0.5*((Probe_u[9]+Probe_v[6])*Probe_v[1]))" 4000 189 > NUL

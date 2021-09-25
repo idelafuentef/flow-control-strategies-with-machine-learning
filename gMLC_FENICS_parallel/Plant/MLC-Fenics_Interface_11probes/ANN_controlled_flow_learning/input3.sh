@@ -1,1 +1,0 @@
-python3 perform_learning.py "np.cos(((-0.10077)-((-0.10077)+Probe_v[4])))" "-np.cos(((-0.10077)-((-0.10077)+Probe_v[4])))" 4000 3 > NUL

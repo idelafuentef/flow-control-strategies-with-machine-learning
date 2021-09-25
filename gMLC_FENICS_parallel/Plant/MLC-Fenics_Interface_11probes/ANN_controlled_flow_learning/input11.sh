@@ -1,1 +1,0 @@
-python3 perform_learning.py "Probe_u[3]" "-Probe_u[3]" 4000 11 > NUL
