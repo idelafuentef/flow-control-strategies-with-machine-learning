@@ -1,0 +1,1 @@
+python3 perform_learning.py "np.cos(Probe_u[9])" "-np.cos(Probe_u[9])" 4000 98 > NUL

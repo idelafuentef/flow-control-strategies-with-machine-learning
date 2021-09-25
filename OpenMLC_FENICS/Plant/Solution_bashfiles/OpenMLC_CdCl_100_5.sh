@@ -1,0 +1,1 @@
+python3 ./perform_learning.py "0.01*((((Cl-Cd_500)+np.sin(Cl))+np.sin(Cl)))" "-0.01*((((Cl-Cd_500)+np.sin(Cl))+np.sin(Cl)))" 12000 5

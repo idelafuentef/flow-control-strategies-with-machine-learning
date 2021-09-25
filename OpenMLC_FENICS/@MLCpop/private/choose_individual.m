@@ -1,4 +1,4 @@
-function idv_orig=choose_individual(mlcpop,mlc_parameters,idx_source_pool);
+function idv_orig=choose_individual(mlcpop,mlc_parameters,idx_source_pool)
 % copyright
 switch mlc_parameters.selectionmethod
 %% Tournament

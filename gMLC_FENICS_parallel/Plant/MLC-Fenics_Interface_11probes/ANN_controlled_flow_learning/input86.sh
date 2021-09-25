@@ -1,0 +1,1 @@
+python3 perform_learning.py "(Probe_u[1]*(-0.62615))" "-(Probe_u[1]*(-0.62615))" 4000 86 > NUL

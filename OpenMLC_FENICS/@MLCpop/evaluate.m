@@ -63,9 +63,7 @@ function [mlcpop,mlctable]=evaluate(mlcpop,mlctable,mlc_parameters,eval_idx)
         eval(['heval=@' mlc_parameters.evaluation_function ';']);
         f=heval;
         nidx=length(eval_idx);
-        delete saved_models/test_strategy*
-        delete(gcp('nocreate'));
-        parpool(60);
+        delete saved_models/*csv;
         parfor i=istart:nidx
             if verb>3
                 fprintf('Individual %i from generation %i\n',eval_idx(i),ngen)

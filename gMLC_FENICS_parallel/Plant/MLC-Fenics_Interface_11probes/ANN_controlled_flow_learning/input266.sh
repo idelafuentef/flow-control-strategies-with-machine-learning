@@ -1,0 +1,1 @@
+python3 perform_learning.py "((Probe_v[2]+Probe_v[6])-np.tanh(Probe_v[0]))" "-((Probe_v[2]+Probe_v[6])-np.tanh(Probe_v[0]))" 4000 266 > NUL

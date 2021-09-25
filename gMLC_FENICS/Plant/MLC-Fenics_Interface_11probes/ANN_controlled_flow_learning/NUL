@@ -1,0 +1,13 @@
+iUFL can be obtained from https://github.com/MiroK/ufl-interpreter
+--- call init ---
+Load initial flow
+Load buffer history
+--- done init ---
+Load initial flow
+Load buffer history
+Simulation_lift | Ep N:    0, step:    0, Rec Area: 0.0117, drag: -0.1586, lift: 0.0167
+Simulation_lift | Ep N:    0, step:   10, Rec Area: 0.0117, drag: -0.1586, lift: 0.0206
+Simulation_lift | Ep N:    0, step:   20, Rec Area: 0.0118, drag: -0.1587, lift: 0.0257
+Simulation_lift | Ep N:    0, step:   30, Rec Area: 0.0117, drag: -0.1588, lift: 0.0303
+Simulation_lift | Ep N:    0, step:   40, Rec Area: 0.0113, drag: -0.1590, lift: 0.0344
+Simulation_lift | Ep N:    0, step:   50, Rec Area: 0.0112, drag: -0.1592, lift: 0.0382

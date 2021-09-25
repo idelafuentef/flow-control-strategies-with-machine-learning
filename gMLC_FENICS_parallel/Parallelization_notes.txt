@@ -1,0 +1,16 @@
+The following files have been modified for to make the code work with the MATLAB parallel toolbox:
+@gMLCtable/computesubtitute.m
+@gMLCbasket/evaluate.m
+@gMLC/step_evolution.m
+@gMLC/monte_carlo.m
+@MLCpop/evaluate_pop.m (a parallel section is added but not used for now)
+It should be activated if the evaluation of the individuals during the resolution of the secondary regression problem needs to be parallelized. See below.
+
+So far, the following steps are parallelized:
+- the inital monte carlo step, the evaluation of the 100 individuals is done thanks to a parfor loop.
+- the evolution step, the evaluation of the individuals is done thanks to a parfor loop.
+- the resolution of the secondary regression problems is done thanks to a parfor loop. During the learning process, a certain number (NOffspring) of secondary regression problems need to be solved. The parallelization is done such as each worker solves one secondary problem. The resolution consists on solving a GP optimization thus evaluating several individuals. To improve even further this step, more workers could be allocated to each secondary problem such as the evaluation of the individuals is parallelized. Something similar has already been done with a cluster but not for a single station.
+
+The code has only been tested without the parallel toolbox.
+
+20210629 - GYCM

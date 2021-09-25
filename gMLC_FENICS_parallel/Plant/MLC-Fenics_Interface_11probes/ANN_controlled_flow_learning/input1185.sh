@@ -1,0 +1,1 @@
+python3 perform_learning.py "(np.sin((Probe_v[6]+(np.tanh(Probe_u[10])*np.cos(Probe_v[7]))))*(Probe_u[9]*Probe_u[9]))" "-(np.sin((Probe_v[6]+(np.tanh(Probe_u[10])*np.cos(Probe_v[7]))))*(Probe_u[9]*Probe_u[9]))" 4000 1185 > NUL

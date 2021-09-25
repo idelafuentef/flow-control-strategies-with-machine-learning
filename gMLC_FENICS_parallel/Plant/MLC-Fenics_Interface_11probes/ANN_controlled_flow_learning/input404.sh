@@ -1,0 +1,1 @@
+python3 perform_learning.py "((np.sin((Probe_v[3]-(Probe_v[1]*Probe_u[6])))+Probe_u[10])+Probe_v[6])" "-((np.sin((Probe_v[3]-(Probe_v[1]*Probe_u[6])))+Probe_u[10])+Probe_v[6])" 4000 404 > NUL
